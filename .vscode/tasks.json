@@ -1,0 +1,83 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run flight fare training",
+			"type": "shell",
+			"command": "python src/model_evaluation.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install Python dependencies",
+			"type": "shell",
+			"command": "python -m pip install -r requirements.txt",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Verify dependencies",
+			"type": "shell",
+			"command": "python -m pip show pandas scikit-learn joblib openpyxl",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Inspect Python paths",
+			"type": "shell",
+			"command": "where python && where py && py -3 -c \"import sys; print(sys.executable); import pandas; print('pandas', pandas.__version__)\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install dependencies with Python 3.13",
+			"type": "shell",
+			"command": "py -3 -m pip install -r requirements.txt",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install with Python 3.13 executable",
+			"type": "shell",
+			"command": "C:\\Users\\saite\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install -r requirements.txt",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run training pipeline",
+			"type": "shell",
+			"command": "C:\\Users\\saite\\AppData\\Local\\Programs\\Python\\Python313\\python.exe src/model_evaluation.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run training pipeline",
+			"type": "shell",
+			"command": "C:\\Users\\saite\\AppData\\Local\\Programs\\Python\\Python313\\python.exe src/model_evaluation.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Generate predictions",
+			"type": "shell",
+			"command": "C:\\Users\\saite\\AppData\\Local\\Programs\\Python\\Python313\\python.exe src/prediction.py",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install Flask for app",
+			"type": "shell",
+			"command": "C:\\Users\\saite\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install flask",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Start Flask app",
+			"type": "shell",
+			"command": "C:\\Users\\saite\\AppData\\Local\\Programs\\Python\\Python313\\python.exe app/app.py",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
